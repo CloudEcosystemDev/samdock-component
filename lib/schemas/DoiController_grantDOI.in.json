@@ -1,0 +1,25 @@
+{
+    "type": "object",
+    "properties": {
+        "draftOrPersonID": {
+            "required": true,
+            "type": "string"
+        },
+        "_tenantID": {
+            "required": true,
+            "type": "string"
+        },
+        "redirectUrl": {
+            "required": true,
+            "type": "string"
+        },
+        "verify": {
+            "required": true,
+            "type": "string"
+        },
+        "email": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

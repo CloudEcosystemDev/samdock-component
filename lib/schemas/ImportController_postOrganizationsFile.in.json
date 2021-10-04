@@ -1,0 +1,9 @@
+{
+    "type": "object",
+    "properties": {
+        "importID": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

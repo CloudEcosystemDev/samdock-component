@@ -1,0 +1,217 @@
+{
+    "type": "object",
+    "properties": {
+        "source": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "type": "object",
+            "properties": {
+                "_id": {
+                    "type": "string",
+                    "description": "the id of the contact draft",
+                    "default": "pIdeHJDpzFe6AAuCA72OH"
+                },
+                "email": {
+                    "type": "string",
+                    "description": "the email of the person in the draft if present",
+                    "default": "test@daypaio.app"
+                },
+                "firstName": {
+                    "type": "string",
+                    "description": "The first name of the person in the draft if present",
+                    "default": "Anthony"
+                },
+                "lastName": {
+                    "type": "string",
+                    "description": "The last name of the person in the draft if present",
+                    "default": "Flannigon"
+                },
+                "birthday": {
+                    "type": "object",
+                    "description": "the birthday of the person in the draft",
+                    "default": "2011-12-21"
+                },
+                "gender": {
+                    "type": "string",
+                    "description": "the address of the contact draft",
+                    "default": "male"
+                },
+                "namePrefix": {
+                    "type": "string",
+                    "description": "the address of the contact draft",
+                    "default": "Dr."
+                },
+                "nameSuffix": {
+                    "type": "string",
+                    "description": "the address of the contact draft",
+                    "default": "?"
+                },
+                "website": {
+                    "type": "string",
+                    "description": "the address of the contact draft",
+                    "default": "www.de"
+                },
+                "street": {
+                    "type": "string",
+                    "description": "the address of the contact draft",
+                    "default": "Walter-Gropius-Strasse"
+                },
+                "number": {
+                    "type": "string",
+                    "description": "the number of the contact draft",
+                    "default": "17"
+                },
+                "postcode": {
+                    "type": "string",
+                    "description": "The post code of the contact draft",
+                    "default": "80808"
+                },
+                "city": {
+                    "type": "string",
+                    "description": "The city of the contact draft",
+                    "default": "Munich"
+                },
+                "phoneNumber": {
+                    "type": "string",
+                    "description": "phonenumber of the person in the draft",
+                    "default": "+431111111"
+                },
+                "mobileNumber": {
+                    "type": "string",
+                    "description": "phonenumber of the person in the draft",
+                    "default": "+4322222222"
+                },
+                "officeNumber": {
+                    "type": "string",
+                    "description": "phonenumber of the person in the draft",
+                    "default": "+4333333333"
+                },
+                "homeNumber": {
+                    "type": "string",
+                    "description": "phonenumber of the person in the draft",
+                    "default": "+434444444"
+                },
+                "privateNumber": {
+                    "type": "string",
+                    "description": "phonenumber of the person in the draft",
+                    "default": "+4355555555"
+                },
+                "faxNumber": {
+                    "type": "string",
+                    "description": "phonenumber of the person in the draft",
+                    "default": "+43666666666"
+                },
+                "instagram": {
+                    "type": "string",
+                    "description": "phonenumber of the person in the draft",
+                    "default": "#abc"
+                },
+                "linkedin": {
+                    "type": "string",
+                    "description": "phonenumber of the person in the draft",
+                    "default": "#abc"
+                },
+                "facebook": {
+                    "type": "string",
+                    "description": "phonenumber of the person in the draft",
+                    "default": "#abc"
+                },
+                "twitter": {
+                    "type": "string",
+                    "description": "phonenumber of the person in the draft",
+                    "default": "#abc"
+                },
+                "xing": {
+                    "type": "string",
+                    "description": "phonenumber of the person in the draft",
+                    "default": "#abc"
+                },
+                "companyName": {
+                    "type": "string",
+                    "description": "the company name of the company present in the draft",
+                    "default": "Daypaio GmbH"
+                },
+                "companyEmail": {
+                    "type": "string",
+                    "description": "the email of the company present in the draft",
+                    "default": "info@daypaio.com"
+                },
+                "companyPhoneNumber": {
+                    "type": "string",
+                    "description": "the phonenumber of the company",
+                    "default": "+4312345678"
+                },
+                "companyFaxNumber": {
+                    "type": "string",
+                    "description": "the FaxNumber of the company",
+                    "default": "+4312345678"
+                },
+                "companyTaxID": {
+                    "type": "string",
+                    "description": "the tax ID of the company",
+                    "default": "DE23423RFD"
+                },
+                "companyWebsite": {
+                    "type": "string",
+                    "description": "the Website of the company",
+                    "default": "www.de"
+                },
+                "companyStreet": {
+                    "type": "string",
+                    "description": "the company address of the contact draft",
+                    "default": "Walter-Gropius-Strasse"
+                },
+                "companyNumber": {
+                    "type": "string",
+                    "description": "the company number of the contact draft",
+                    "default": "17"
+                },
+                "companyPostcode": {
+                    "type": "string",
+                    "description": "The company post code of the contact draft",
+                    "default": "80808"
+                },
+                "companyCity": {
+                    "type": "string",
+                    "description": "The company city of the contact draft",
+                    "default": "Munich"
+                },
+                "companyInstagram": {
+                    "type": "string",
+                    "description": "the Instagram of the company",
+                    "default": "#cba"
+                },
+                "companyLinkedin": {
+                    "type": "string",
+                    "description": "the Linkedin of the company",
+                    "default": "#cba"
+                },
+                "companyFacebook": {
+                    "type": "string",
+                    "description": "the Facebook of the company",
+                    "default": "#cba"
+                },
+                "companyTwitter": {
+                    "type": "string",
+                    "description": "the Twitter of the company",
+                    "default": "#cba"
+                },
+                "companyXing": {
+                    "type": "string",
+                    "description": "the Xing of the company",
+                    "default": "#cba"
+                },
+                "leadRequirements": {
+                    "type": "string",
+                    "description": "free text field for requirements",
+                    "default": "test"
+                }
+            },
+            "required": [
+                "_id"
+            ]
+        }
+    }
+}

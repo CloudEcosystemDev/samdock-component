@@ -1,0 +1,64 @@
+{
+    "type": "object",
+    "properties": {
+        "_id": {
+            "type": "string",
+            "description": "the id of the custom field",
+            "default": "e2thZPp5lT7Vfyeg_e317"
+        },
+        "_tenantID": {
+            "type": "string",
+            "description": "the id of the tenant"
+        },
+        "name": {
+            "type": "string",
+            "description": "the name of the custom field"
+        },
+        "key": {
+            "type": "string",
+            "description": "the key of the custom field"
+        },
+        "description": {
+            "type": "string",
+            "description": "the description of the custom field"
+        },
+        "type": {
+            "type": "string",
+            "description": "the type of the custom field",
+            "enum": [
+                "text",
+                "select",
+                "multiselect",
+                "currency"
+            ]
+        },
+        "status": {
+            "type": "string",
+            "description": "the status of the custom field",
+            "enum": [
+                "active",
+                "hidden"
+            ]
+        },
+        "createdAt": {
+            "type": "number",
+            "description": "when custom field was created"
+        },
+        "createdBy": {
+            "type": "string",
+            "description": "id of User who created custom field"
+        },
+        "updatedAt": {
+            "type": "number",
+            "description": "when custom field was updated"
+        },
+        "updatedBy": {
+            "type": "string",
+            "description": "id of User who updated custom field"
+        },
+        "options": {
+            "type": "object",
+            "description": "any options of the custom field"
+        }
+    }
+}

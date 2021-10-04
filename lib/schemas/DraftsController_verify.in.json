@@ -1,0 +1,22 @@
+{
+    "type": "object",
+    "properties": {
+        "id": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "type": "object",
+            "properties": {
+                "createLead": {
+                    "type": "boolean",
+                    "description": "Whether to create a lead once the draft is verified",
+                    "default": true
+                }
+            },
+            "required": [
+                "createLead"
+            ]
+        }
+    }
+}

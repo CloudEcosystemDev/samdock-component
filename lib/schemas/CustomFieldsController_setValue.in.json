@@ -1,0 +1,49 @@
+{
+    "type": "object",
+    "properties": {
+        "id": {
+            "required": true,
+            "type": "string"
+        },
+        "entity": {
+            "required": true,
+            "type": "string",
+            "enum": [
+                "person",
+                "organization"
+            ]
+        },
+        "requestBody": {
+            "type": "object",
+            "properties": {
+                "from": {
+                    "type": "string",
+                    "description": "From value"
+                },
+                "to": {
+                    "type": "string",
+                    "description": "To value"
+                },
+                "key": {
+                    "type": "string",
+                    "description": "Custom field key"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "Custom field type",
+                    "enum": [
+                        "select",
+                        "multiselect"
+                    ],
+                    "default": "select"
+                }
+            },
+            "required": [
+                "from",
+                "to",
+                "key",
+                "type"
+            ]
+        }
+    }
+}

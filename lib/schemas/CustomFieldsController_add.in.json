@@ -1,0 +1,48 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "type": "object",
+            "properties": {
+                "_id": {
+                    "type": "string",
+                    "description": "the id of the custom field",
+                    "default": "c6D_lyZAFt6kpzaIZsAi4"
+                },
+                "entity": {
+                    "type": "string",
+                    "description": "the entity of the custom field",
+                    "enum": [
+                        "person",
+                        "organization"
+                    ]
+                },
+                "name": {
+                    "type": "string",
+                    "description": "the name of the custom field"
+                },
+                "key": {
+                    "type": "string",
+                    "description": "the key of the custom field"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "the type of the custom field",
+                    "enum": [
+                        "text",
+                        "select",
+                        "multiselect",
+                        "currency"
+                    ]
+                }
+            },
+            "required": [
+                "_id",
+                "entity",
+                "name",
+                "key",
+                "type"
+            ]
+        }
+    }
+}

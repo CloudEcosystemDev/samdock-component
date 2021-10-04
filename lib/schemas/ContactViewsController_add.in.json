@@ -1,0 +1,51 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "type": "object",
+            "properties": {
+                "_id": {
+                    "type": "string",
+                    "description": "The id of the contact view",
+                    "default": "rcYxFUQYecbqMh-Kt9SYs"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "The name of the contact view"
+                },
+                "entity": {
+                    "type": "string",
+                    "description": "The entity of the contact view",
+                    "enum": [
+                        "person",
+                        "organization",
+                        "all"
+                    ]
+                },
+                "isShared": {
+                    "type": "boolean",
+                    "description": "Is this contact view shared"
+                },
+                "isLocked": {
+                    "type": "boolean",
+                    "description": "Is this contact view locked"
+                },
+                "filters": {
+                    "type": "object",
+                    "description": "Contact view filters"
+                },
+                "columns": {
+                    "type": "object",
+                    "description": "Contact view columns"
+                }
+            },
+            "required": [
+                "_id",
+                "name",
+                "entity",
+                "filters",
+                "columns"
+            ]
+        }
+    }
+}

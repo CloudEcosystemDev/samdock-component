@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": {
+        "branchID": {
+            "required": true,
+            "type": "string"
+        },
+        "organizationID": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": {
+        "lang": {
+            "required": true,
+            "type": "string"
+        },
+        "importID": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

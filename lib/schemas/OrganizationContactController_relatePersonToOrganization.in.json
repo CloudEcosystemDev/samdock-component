@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": {
+        "organizationID": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "type": "object",
+            "properties": {}
+        }
+    }
+}
