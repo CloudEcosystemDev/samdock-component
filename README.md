@@ -1,4 +1,4 @@
-# <p align="center" width="100%"> <img src="./logo.png" width="250"> </p>
+# <p align="center" width="100%"> <img src="./logo.jpeg" width="250"> </p>
 
 # <p align="center" width="100%"> contacts OIH Connector </p>
 
