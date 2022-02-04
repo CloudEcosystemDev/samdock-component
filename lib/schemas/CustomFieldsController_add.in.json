@@ -7,7 +7,7 @@
                 "_id": {
                     "type": "string",
                     "description": "the id of the custom field",
-                    "default": "c6D_lyZAFt6kpzaIZsAi4"
+                    "default": "4DcjW6qbTm4p92laJiGrd"
                 },
                 "entity": {
                     "type": "string",

@@ -7,7 +7,7 @@
                 "_id": {
                     "type": "string",
                     "description": "the id of the inbound source",
-                    "default": "dedcngfrqiJ0pg48Zde8b"
+                    "default": "dFE7TwofRRvpmHiNnxBkI"
                 },
                 "status": {
                     "type": "string",
@@ -24,7 +24,8 @@
                     "description": "the status of the inbound source",
                     "enum": [
                         "api",
-                        "form"
+                        "form",
+                        "email"
                     ],
                     "default": "api"
                 },

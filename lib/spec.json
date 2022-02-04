@@ -595,7 +595,7 @@
                     "_id": {
                         "type": "string",
                         "description": "the id of the contact draft",
-                        "default": "pIdeHJDpzFe6AAuCA72OH"
+                        "default": "vL3Qaezd1DbQPW7Iw8iir"
                     },
                     "email": {
                         "type": "string",
@@ -816,7 +816,7 @@
                     "_id": {
                         "type": "string",
                         "description": "the id of the inbound source",
-                        "default": "dedcngfrqiJ0pg48Zde8b"
+                        "default": "dFE7TwofRRvpmHiNnxBkI"
                     },
                     "status": {
                         "type": "string",
@@ -833,7 +833,8 @@
                         "description": "the status of the inbound source",
                         "enum": [
                             "api",
-                            "form"
+                            "form",
+                            "email"
                         ],
                         "default": "api"
                     },
@@ -876,7 +877,7 @@
                     "_id": {
                         "type": "string",
                         "description": "the id of the custom field",
-                        "default": "e2thZPp5lT7Vfyeg_e317"
+                        "default": "dq3JIFUFxrKxwNWmlfFoP"
                     },
                     "_tenantID": {
                         "type": "string",
@@ -955,7 +956,7 @@
                                 "_id": {
                                     "type": "string",
                                     "description": "the id of the custom field",
-                                    "default": "e2thZPp5lT7Vfyeg_e317"
+                                    "default": "dq3JIFUFxrKxwNWmlfFoP"
                                 },
                                 "_tenantID": {
                                     "type": "string",
@@ -1032,7 +1033,7 @@
                                 "_id": {
                                     "type": "string",
                                     "description": "the id of the custom field",
-                                    "default": "e2thZPp5lT7Vfyeg_e317"
+                                    "default": "dq3JIFUFxrKxwNWmlfFoP"
                                 },
                                 "_tenantID": {
                                     "type": "string",
@@ -1144,7 +1145,7 @@
                     "_id": {
                         "type": "string",
                         "description": "the id of the custom field",
-                        "default": "c6D_lyZAFt6kpzaIZsAi4"
+                        "default": "4DcjW6qbTm4p92laJiGrd"
                     },
                     "entity": {
                         "type": "string",
@@ -1187,7 +1188,7 @@
                     "_id": {
                         "type": "string",
                         "description": "The id of the contact view",
-                        "default": "rcYxFUQYecbqMh-Kt9SYs"
+                        "default": "IWXaqhlO2zntSFGqmaV38"
                     },
                     "name": {
                         "type": "string",
@@ -1258,7 +1259,7 @@
                     "_id": {
                         "type": "string",
                         "description": "The id of the contact view",
-                        "default": "rcYxFUQYecbqMh-Kt9SYs"
+                        "default": "IWXaqhlO2zntSFGqmaV38"
                     },
                     "name": {
                         "type": "string",
@@ -3021,7 +3022,7 @@
                                     "_id": {
                                         "type": "string",
                                         "description": "the id of the contact draft",
-                                        "default": "pIdeHJDpzFe6AAuCA72OH"
+                                        "default": "vL3Qaezd1DbQPW7Iw8iir"
                                     },
                                     "email": {
                                         "type": "string",
@@ -3602,7 +3603,7 @@
                                             "_id": {
                                                 "type": "string",
                                                 "description": "the id of the inbound source",
-                                                "default": "dedcngfrqiJ0pg48Zde8b"
+                                                "default": "dFE7TwofRRvpmHiNnxBkI"
                                             },
                                             "status": {
                                                 "type": "string",
@@ -3619,7 +3620,8 @@
                                                 "description": "the status of the inbound source",
                                                 "enum": [
                                                     "api",
-                                                    "form"
+                                                    "form",
+                                                    "email"
                                                 ],
                                                 "default": "api"
                                             },
@@ -3691,7 +3693,7 @@
                                     "_id": {
                                         "type": "string",
                                         "description": "the id of the inbound source",
-                                        "default": "dedcngfrqiJ0pg48Zde8b"
+                                        "default": "dFE7TwofRRvpmHiNnxBkI"
                                     },
                                     "status": {
                                         "type": "string",
@@ -3708,7 +3710,8 @@
                                         "description": "the status of the inbound source",
                                         "enum": [
                                             "api",
-                                            "form"
+                                            "form",
+                                            "email"
                                         ],
                                         "default": "api"
                                     },
@@ -3798,7 +3801,7 @@
                                         "_id": {
                                             "type": "string",
                                             "description": "the id of the inbound source",
-                                            "default": "dedcngfrqiJ0pg48Zde8b"
+                                            "default": "dFE7TwofRRvpmHiNnxBkI"
                                         },
                                         "status": {
                                             "type": "string",
@@ -3815,7 +3818,8 @@
                                             "description": "the status of the inbound source",
                                             "enum": [
                                                 "api",
-                                                "form"
+                                                "form",
+                                                "email"
                                             ],
                                             "default": "api"
                                         },
@@ -3898,7 +3902,7 @@
                                     "_id": {
                                         "type": "string",
                                         "description": "the id of the inbound source",
-                                        "default": "dedcngfrqiJ0pg48Zde8b"
+                                        "default": "dFE7TwofRRvpmHiNnxBkI"
                                     },
                                     "status": {
                                         "type": "string",
@@ -3915,7 +3919,8 @@
                                         "description": "the status of the inbound source",
                                         "enum": [
                                             "api",
-                                            "form"
+                                            "form",
+                                            "email"
                                         ],
                                         "default": "api"
                                     },
@@ -4080,7 +4085,7 @@
                                                     "_id": {
                                                         "type": "string",
                                                         "description": "the id of the custom field",
-                                                        "default": "e2thZPp5lT7Vfyeg_e317"
+                                                        "default": "dq3JIFUFxrKxwNWmlfFoP"
                                                     },
                                                     "_tenantID": {
                                                         "type": "string",
@@ -4157,7 +4162,7 @@
                                                     "_id": {
                                                         "type": "string",
                                                         "description": "the id of the custom field",
-                                                        "default": "e2thZPp5lT7Vfyeg_e317"
+                                                        "default": "dq3JIFUFxrKxwNWmlfFoP"
                                                     },
                                                     "_tenantID": {
                                                         "type": "string",
@@ -4265,7 +4270,7 @@
                                     "_id": {
                                         "type": "string",
                                         "description": "the id of the custom field",
-                                        "default": "c6D_lyZAFt6kpzaIZsAi4"
+                                        "default": "4DcjW6qbTm4p92laJiGrd"
                                     },
                                     "entity": {
                                         "type": "string",
@@ -4358,7 +4363,7 @@
                                             "_id": {
                                                 "type": "string",
                                                 "description": "the id of the custom field",
-                                                "default": "e2thZPp5lT7Vfyeg_e317"
+                                                "default": "dq3JIFUFxrKxwNWmlfFoP"
                                             },
                                             "_tenantID": {
                                                 "type": "string",
@@ -4570,7 +4575,7 @@
                                     "_id": {
                                         "type": "string",
                                         "description": "the id of the custom field",
-                                        "default": "e2thZPp5lT7Vfyeg_e317"
+                                        "default": "dq3JIFUFxrKxwNWmlfFoP"
                                     },
                                     "_tenantID": {
                                         "type": "string",
@@ -4736,7 +4741,7 @@
                                             "_id": {
                                                 "type": "string",
                                                 "description": "The id of the contact view",
-                                                "default": "rcYxFUQYecbqMh-Kt9SYs"
+                                                "default": "IWXaqhlO2zntSFGqmaV38"
                                             },
                                             "name": {
                                                 "type": "string",
@@ -4836,7 +4841,7 @@
                                     "_id": {
                                         "type": "string",
                                         "description": "The id of the contact view",
-                                        "default": "rcYxFUQYecbqMh-Kt9SYs"
+                                        "default": "IWXaqhlO2zntSFGqmaV38"
                                     },
                                     "name": {
                                         "type": "string",
@@ -4926,7 +4931,7 @@
                                         "_id": {
                                             "type": "string",
                                             "description": "The id of the contact view",
-                                            "default": "rcYxFUQYecbqMh-Kt9SYs"
+                                            "default": "IWXaqhlO2zntSFGqmaV38"
                                         },
                                         "name": {
                                             "type": "string",
@@ -5037,7 +5042,7 @@
                                     "_id": {
                                         "type": "string",
                                         "description": "The id of the contact view",
-                                        "default": "rcYxFUQYecbqMh-Kt9SYs"
+                                        "default": "IWXaqhlO2zntSFGqmaV38"
                                     },
                                     "name": {
                                         "type": "string",
