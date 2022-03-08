@@ -152,5 +152,13 @@
             "type": "object",
             "description": "Integrations info of the person"
         }
-    }
+    },
+    "required": [
+        "_tenantID",
+        "_id",
+        "lastName",
+        "gender",
+        "namePrefix",
+        "nameSuffix"
+    ]
 }

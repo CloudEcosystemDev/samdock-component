@@ -1,4 +1,200 @@
 {
     "type": "object",
-    "properties": {}
+    "properties": {
+        "_tenantID": {
+            "type": "string",
+            "description": "the related tenant"
+        },
+        "_id": {
+            "type": "string",
+            "description": "The ID of the contact draft"
+        },
+        "firstName": {
+            "type": "string",
+            "description": "The first name of the contact draft"
+        },
+        "lastName": {
+            "type": "string",
+            "description": "The last name of the contact draft"
+        },
+        "email": {
+            "type": "string",
+            "description": "The email of the person of draft"
+        },
+        "gender": {
+            "type": "string",
+            "description": "The gender of the person of draft"
+        },
+        "nameSuffix": {
+            "type": "string",
+            "description": "The nameSuffix of the person of draft"
+        },
+        "namePrefix": {
+            "type": "string",
+            "description": "The namePrefix of the person of draft"
+        },
+        "birthday": {
+            "type": "string",
+            "description": "The birthday of the person of draft"
+        },
+        "street": {
+            "type": "string",
+            "description": "The street of the person of contact draft"
+        },
+        "number": {
+            "type": "string",
+            "description": "The number of the person of contact draft"
+        },
+        "postcode": {
+            "type": "string",
+            "description": "The postcode of the person of contact draft"
+        },
+        "city": {
+            "type": "string",
+            "description": "The city of the person of contact draft"
+        },
+        "phoneNumber": {
+            "type": "string",
+            "description": "The phone number of the person of contact draft"
+        },
+        "mobileNumber": {
+            "type": "string",
+            "description": "The mobile number of the person of contact draft"
+        },
+        "officeNumber": {
+            "type": "string",
+            "description": "The office number of the person of contact draft"
+        },
+        "homeNumber": {
+            "type": "string",
+            "description": "The home number of the person of contact draft"
+        },
+        "privateNumber": {
+            "type": "string",
+            "description": "The private number of the person of contact draft"
+        },
+        "faxNumber": {
+            "type": "string",
+            "description": "The fax number of the person of contact draft"
+        },
+        "instagram": {
+            "type": "string",
+            "description": "The instagram of the person of contact draft"
+        },
+        "linkedin": {
+            "type": "string",
+            "description": "The linkedin of the person of contact draft"
+        },
+        "facebook": {
+            "type": "string",
+            "description": "The facebook of the person of contact draft"
+        },
+        "twitter": {
+            "type": "string",
+            "description": "The twitter of the person of contact draft"
+        },
+        "xing": {
+            "type": "string",
+            "description": "The xing of the person of contact draft"
+        },
+        "companyName": {
+            "type": "string",
+            "description": "The company name of the contact draft"
+        },
+        "companyEmail": {
+            "type": "string",
+            "description": "The companyEmail name of the contact draft"
+        },
+        "companyTaxID": {
+            "type": "string",
+            "description": "The tax id of the organization of the contact draft"
+        },
+        "companyStreet": {
+            "type": "string",
+            "description": "The street of the organization of contact draft"
+        },
+        "companyNumber": {
+            "type": "string",
+            "description": "The number of the organization of contact draft"
+        },
+        "companyPostcode": {
+            "type": "string",
+            "description": "The postcode of the organization of contact draft"
+        },
+        "companyCity": {
+            "type": "string",
+            "description": "The city of the organization of contact draft"
+        },
+        "companyPhoneNumber": {
+            "type": "string",
+            "description": "The phone number name of the organization of the contact draft"
+        },
+        "companyFaxNumber": {
+            "type": "string",
+            "description": "The fax number name of the organization of the contact draft"
+        },
+        "companyWebsite": {
+            "type": "string",
+            "description": "The website of the organization of the contact draft"
+        },
+        "companyInstagram": {
+            "type": "string",
+            "description": "The Instagram of the organization of the contact draft"
+        },
+        "companyLinkedin": {
+            "type": "string",
+            "description": "The Linkedin of the organization of the contact draft"
+        },
+        "companyFacebook": {
+            "type": "string",
+            "description": "The Facebook of the organization of the contact draft"
+        },
+        "companyTwitter": {
+            "type": "string",
+            "description": "The Twitter of the organization of the contact draft"
+        },
+        "companyXing": {
+            "type": "string",
+            "description": "The Xing of the organization of the contact draft"
+        },
+        "leadRequirements": {
+            "type": "string",
+            "description": "free text field for lead requirements"
+        },
+        "source": {
+            "type": "string",
+            "description": "The source of the contact draft"
+        },
+        "createdAt": {
+            "type": "number",
+            "description": "The created at timestamp of the draft"
+        },
+        "verifiedAt": {
+            "type": "number",
+            "description": "The verified at timestamp of the draft"
+        },
+        "createLead": {
+            "type": "boolean",
+            "description": "Whether the verification of the draft should create a lead"
+        },
+        "editor": {
+            "type": "string",
+            "description": "the default editor that will be assigned to the draft"
+        },
+        "consent": {
+            "type": "object",
+            "description": "doi consent of the draft"
+        },
+        "customFields": {
+            "description": "Custom fields of the draft should add to person or organization if created",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    },
+    "required": [
+        "_tenantID",
+        "_id"
+    ]
 }

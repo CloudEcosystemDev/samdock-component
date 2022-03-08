@@ -4,7 +4,7 @@
         "_id": {
             "type": "string",
             "description": "The id of the contact view",
-            "default": "rcYxFUQYecbqMh-Kt9SYs"
+            "default": "kurgiKqY8gmHkzL9B9Ce4"
         },
         "name": {
             "type": "string",
@@ -55,5 +55,17 @@
             "type": "string",
             "description": "The id of user who updated contact view last time"
         }
-    }
+    },
+    "required": [
+        "_id",
+        "name",
+        "entity",
+        "filters",
+        "columns",
+        "_tenantID",
+        "createdAt",
+        "createdBy",
+        "updatedAt",
+        "updatedBy"
+    ]
 }
