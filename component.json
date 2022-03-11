@@ -34,12 +34,6 @@
             "main": "./lib/triggers/trigger.js",
             "title": "Read lastSeen",
             "description": "Read lastSeen persons of current user",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
             "callParams": {
                 "pathName": "/api/contacts/persons/last-seen",
                 "method": "get"
@@ -49,34 +43,10 @@
                 "out": "./lib/schemas/PersonLastSeenController_read.out.json"
             }
         },
-        "PersonActivitiesController_browseActivities": {
-            "main": "./lib/triggers/trigger.js",
-            "title": "PersonActivitiesController_browseActivities",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
-            "callParams": {
-                "pathName": "/api/contacts/persons/{id}/activities",
-                "method": "get"
-            },
-            "metadata": {
-                "in": "./lib/schemas/PersonActivitiesController_browseActivities.in.json",
-                "out": "./lib/schemas/PersonActivitiesController_browseActivities.out.json"
-            }
-        },
         "PersonsController_browse": {
             "main": "./lib/triggers/trigger.js",
             "title": "Browse Persons",
             "description": "Get all persons",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
             "callParams": {
                 "pathName": "/api/contacts/persons",
                 "method": "get"
@@ -90,12 +60,6 @@
             "main": "./lib/triggers/trigger.js",
             "title": "Browse Organizations",
             "description": "Get all organizations",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
             "callParams": {
                 "pathName": "/api/contacts/organizations",
                 "method": "get"
@@ -105,34 +69,21 @@
                 "out": "./lib/schemas/OrganizationsController_browse.out.json"
             }
         },
-        "DraftsController_browse": {
+        "PersonActivitiesController_browseActivities": {
             "main": "./lib/triggers/trigger.js",
-            "title": "Browse all contact drafts",
-            "description": "Get all contact drafts",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
+            "title": "PersonActivitiesController_browseActivities",
             "callParams": {
-                "pathName": "/api/contacts/drafts",
+                "pathName": "/api/contacts/persons/{id}/activities",
                 "method": "get"
             },
             "metadata": {
-                "in": "./lib/schemas/DraftsController_browse.in.json",
-                "out": "./lib/schemas/DraftsController_browse.out.json"
+                "in": "./lib/schemas/PersonActivitiesController_browseActivities.in.json",
+                "out": "./lib/schemas/PersonActivitiesController_browseActivities.out.json"
             }
         },
         "OrganizationActivitiesController_browseActivities": {
             "main": "./lib/triggers/trigger.js",
             "title": "OrganizationActivitiesController_browseActivities",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
             "callParams": {
                 "pathName": "/api/contacts/organizations/{id}/activities",
                 "method": "get"
@@ -142,35 +93,23 @@
                 "out": "./lib/schemas/OrganizationActivitiesController_browseActivities.out.json"
             }
         },
-        "InboundSourcesController_generateForm": {
+        "DraftsController_browse": {
             "main": "./lib/triggers/trigger.js",
-            "title": "Get js snippet for inbound source form",
-            "description": "Get js snippet for inbound source form",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
+            "title": "Browse all contact drafts",
+            "description": "Get all contact drafts",
             "callParams": {
-                "pathName": "/api/contacts/inbound-sources/{tenantID}/{id}/form.js",
+                "pathName": "/api/contacts/drafts",
                 "method": "get"
             },
             "metadata": {
-                "in": "./lib/schemas/InboundSourcesController_generateForm.in.json",
-                "out": "./lib/schemas/InboundSourcesController_generateForm.out.json"
+                "in": "./lib/schemas/DraftsController_browse.in.json",
+                "out": "./lib/schemas/DraftsController_browse.out.json"
             }
         },
         "CustomFieldsController_browse": {
             "main": "./lib/triggers/trigger.js",
             "title": "Browse all Custom fields",
             "description": "Get all custom fields",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
             "callParams": {
                 "pathName": "/api/contacts/custom-fields",
                 "method": "get"
@@ -180,16 +119,23 @@
                 "out": "./lib/schemas/CustomFieldsController_browse.out.json"
             }
         },
+        "InboundSourcesController_generateForm": {
+            "main": "./lib/triggers/trigger.js",
+            "title": "Get js snippet for inbound source form",
+            "description": "Get js snippet for inbound source form",
+            "callParams": {
+                "pathName": "/api/contacts/inbound-sources/{tenantID}/{id}/form.js",
+                "method": "get"
+            },
+            "metadata": {
+                "in": "./lib/schemas/InboundSourcesController_generateForm.in.json",
+                "out": "./lib/schemas/InboundSourcesController_generateForm.out.json"
+            }
+        },
         "InboundSourcesController_browse": {
             "main": "./lib/triggers/trigger.js",
             "title": "Browse Inbound sources",
             "description": "Get all inbound sources",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
             "callParams": {
                 "pathName": "/api/contacts/inbound-sources",
                 "method": "get"
@@ -203,12 +149,6 @@
             "main": "./lib/triggers/trigger.js",
             "title": "Browse Contact views",
             "description": "Get all contact views",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
             "callParams": {
                 "pathName": "/api/contacts/contact-views",
                 "method": "get"
@@ -222,12 +162,6 @@
             "main": "./lib/triggers/trigger.js",
             "title": "Grant DOI",
             "description": "Grant DOI",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
             "callParams": {
                 "pathName": "/api/contacts/doi/{draftOrPersonID}/grant",
                 "method": "get"
@@ -239,35 +173,10 @@
         }
     },
     "actions": {
-        "PersonsController_bulkDelete": {
-            "main": "./lib/actions/action.js",
-            "title": "Bulk Delete Persons",
-            "description": "Delete a list of persons",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
-            "callParams": {
-                "pathName": "/api/contacts/persons",
-                "method": "delete"
-            },
-            "metadata": {
-                "in": "./lib/schemas/PersonsController_bulkDelete.in.json",
-                "out": "./lib/schemas/PersonsController_bulkDelete.out.json"
-            }
-        },
         "PersonsController_add": {
             "main": "./lib/actions/action.js",
             "title": "Add Person",
             "description": "Create a single person",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
             "callParams": {
                 "pathName": "/api/contacts/persons",
                 "method": "post",
@@ -282,12 +191,6 @@
             "main": "./lib/actions/action.js",
             "title": "Read Person",
             "description": "Get a single person",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
             "callParams": {
                 "pathName": "/api/contacts/persons/{id}",
                 "method": "get"
@@ -297,55 +200,36 @@
                 "out": "./lib/schemas/PersonsController_read.out.json"
             }
         },
-        "PersonsController_delete": {
+        "OrganizationsController_bulkDelete": {
             "main": "./lib/actions/action.js",
-            "title": "Delete Person",
-            "description": "Delete a single person",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
+            "title": "Bulk delete organizations",
+            "description": "Delete a list of organizations",
             "callParams": {
-                "pathName": "/api/contacts/persons/{id}",
+                "pathName": "/api/contacts/organizations",
                 "method": "delete"
             },
             "metadata": {
-                "in": "./lib/schemas/PersonsController_delete.in.json",
-                "out": "./lib/schemas/PersonsController_delete.out.json"
+                "in": "./lib/schemas/OrganizationsController_bulkDelete.in.json",
+                "out": "./lib/schemas/OrganizationsController_bulkDelete.out.json"
             }
         },
-        "OrganizationsController_add": {
+        "OrganizationsController_read": {
             "main": "./lib/actions/action.js",
-            "title": "Add Organization",
-            "description": "Create an organization",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
+            "title": "Read Organization",
+            "description": "Get an organization by id",
             "callParams": {
-                "pathName": "/api/contacts/organizations",
-                "method": "post",
-                "requestContentType": "application/json"
+                "pathName": "/api/contacts/organizations/{id}",
+                "method": "get"
             },
             "metadata": {
-                "in": "./lib/schemas/OrganizationsController_add.in.json",
-                "out": "./lib/schemas/OrganizationsController_add.out.json"
+                "in": "./lib/schemas/OrganizationsController_read.in.json",
+                "out": "./lib/schemas/OrganizationsController_read.out.json"
             }
         },
         "OrganizationsController_changeLogo": {
             "main": "./lib/actions/action.js",
             "title": "Change Tenant logo",
             "description": "Change the logo of a tenant",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
             "callParams": {
                 "pathName": "/api/contacts/organizations/{id}/logo",
                 "method": "put"
@@ -355,16 +239,50 @@
                 "out": "./lib/schemas/OrganizationsController_changeLogo.out.json"
             }
         },
+        "PersonsController_delete": {
+            "main": "./lib/actions/action.js",
+            "title": "Delete Person",
+            "description": "Delete a single person",
+            "callParams": {
+                "pathName": "/api/contacts/persons/{id}",
+                "method": "delete"
+            },
+            "metadata": {
+                "in": "./lib/schemas/PersonsController_delete.in.json",
+                "out": "./lib/schemas/PersonsController_delete.out.json"
+            }
+        },
+        "OrganizationsController_edit": {
+            "main": "./lib/actions/action.js",
+            "title": "Edit Organization",
+            "description": "Edit an organization",
+            "callParams": {
+                "pathName": "/api/contacts/organizations/{id}",
+                "method": "patch",
+                "requestContentType": "application/json"
+            },
+            "metadata": {
+                "in": "./lib/schemas/OrganizationsController_edit.in.json",
+                "out": "./lib/schemas/OrganizationsController_edit.out.json"
+            }
+        },
+        "OrganizationBranchController_addBranchToOrganization": {
+            "main": "./lib/actions/action.js",
+            "title": "OrganizationBranchController_addBranchToOrganization",
+            "callParams": {
+                "pathName": "/api/contacts/organizations/{organizationID}/branches",
+                "method": "post",
+                "requestContentType": "application/json"
+            },
+            "metadata": {
+                "in": "./lib/schemas/OrganizationBranchController_addBranchToOrganization.in.json",
+                "out": "./lib/schemas/OrganizationBranchController_addBranchToOrganization.out.json"
+            }
+        },
         "PersonLastSeenController_add": {
             "main": "./lib/actions/action.js",
             "title": "Add lastSeen",
             "description": "Add single lastSeen",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
             "callParams": {
                 "pathName": "/api/contacts/persons/last-seen/{id}",
                 "method": "patch"
@@ -374,70 +292,73 @@
                 "out": "./lib/schemas/PersonLastSeenController_add.out.json"
             }
         },
-        "OrganizationsController_delete": {
+        "OrganizationContactController_relatePersonToOrganization": {
             "main": "./lib/actions/action.js",
-            "title": "Delete Organization",
-            "description": "Delete an organization",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
+            "title": "OrganizationContactController_relatePersonToOrganization",
             "callParams": {
-                "pathName": "/api/contacts/organizations/{id}",
+                "pathName": "/api/contacts/organizations/{organizationID}/contacts",
+                "method": "post",
+                "requestContentType": "application/json"
+            },
+            "metadata": {
+                "in": "./lib/schemas/OrganizationContactController_relatePersonToOrganization.in.json",
+                "out": "./lib/schemas/OrganizationContactController_relatePersonToOrganization.out.json"
+            }
+        },
+        "OrganizationContactController_unrelatePersonToOrganization": {
+            "main": "./lib/actions/action.js",
+            "title": "OrganizationContactController_unrelatePersonToOrganization",
+            "callParams": {
+                "pathName": "/api/contacts/organizations/{organizationID}/contacts/{employeeID}",
                 "method": "delete"
             },
             "metadata": {
-                "in": "./lib/schemas/OrganizationsController_delete.in.json",
-                "out": "./lib/schemas/OrganizationsController_delete.out.json"
+                "in": "./lib/schemas/OrganizationContactController_unrelatePersonToOrganization.in.json",
+                "out": "./lib/schemas/OrganizationContactController_unrelatePersonToOrganization.out.json"
             }
         },
-        "OrganizationBranchController_editBranchOfOrganization": {
+        "PersonsController_bulkDelete": {
             "main": "./lib/actions/action.js",
-            "title": "OrganizationBranchController_editBranchOfOrganization",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
+            "title": "Bulk Delete Persons",
+            "description": "Delete a list of persons",
             "callParams": {
-                "pathName": "/api/contacts/organizations/{organizationID}/branches/{branchID}",
+                "pathName": "/api/contacts/persons",
+                "method": "delete"
+            },
+            "metadata": {
+                "in": "./lib/schemas/PersonsController_bulkDelete.in.json",
+                "out": "./lib/schemas/PersonsController_bulkDelete.out.json"
+            }
+        },
+        "OrganizationContactController_changeRoleOfEmployee": {
+            "main": "./lib/actions/action.js",
+            "title": "OrganizationContactController_changeRoleOfEmployee",
+            "callParams": {
+                "pathName": "/api/contacts/organizations/{organizationID}/contacts/{employeeID}/role",
                 "method": "patch"
             },
             "metadata": {
-                "in": "./lib/schemas/OrganizationBranchController_editBranchOfOrganization.in.json",
-                "out": "./lib/schemas/OrganizationBranchController_editBranchOfOrganization.out.json"
+                "in": "./lib/schemas/OrganizationContactController_changeRoleOfEmployee.in.json",
+                "out": "./lib/schemas/OrganizationContactController_changeRoleOfEmployee.out.json"
             }
         },
-        "OrganizationBranchController_deleteBranchOfOrganization": {
+        "DraftsController_verify": {
             "main": "./lib/actions/action.js",
-            "title": "OrganizationBranchController_deleteBranchOfOrganization",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
+            "title": "Verify a draft",
+            "description": "Verify a draft",
             "callParams": {
-                "pathName": "/api/contacts/organizations/{organizationID}/branches/{branchID}",
-                "method": "delete"
+                "pathName": "/api/contacts/drafts/{id}/verify",
+                "method": "patch",
+                "requestContentType": "application/json"
             },
             "metadata": {
-                "in": "./lib/schemas/OrganizationBranchController_deleteBranchOfOrganization.in.json",
-                "out": "./lib/schemas/OrganizationBranchController_deleteBranchOfOrganization.out.json"
+                "in": "./lib/schemas/DraftsController_verify.in.json",
+                "out": "./lib/schemas/DraftsController_verify.out.json"
             }
         },
         "OrganizationContactController_assignContactPerson": {
             "main": "./lib/actions/action.js",
             "title": "OrganizationContactController_assignContactPerson",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
             "callParams": {
                 "pathName": "/api/contacts/organizations/{organizationID}/contacts/{personID}/assignAsContactPerson",
                 "method": "patch"
@@ -451,12 +372,6 @@
             "main": "./lib/actions/action.js",
             "title": "Delete Tenant logo",
             "description": "Delete the logo of a tenant",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
             "callParams": {
                 "pathName": "/api/contacts/organizations/{id}/logo",
                 "method": "delete"
@@ -466,130 +381,10 @@
                 "out": "./lib/schemas/OrganizationsController_deleteLogo.out.json"
             }
         },
-        "OrganizationContactController_changeRoleOfEmployee": {
-            "main": "./lib/actions/action.js",
-            "title": "OrganizationContactController_changeRoleOfEmployee",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
-            "callParams": {
-                "pathName": "/api/contacts/organizations/{organizationID}/contacts/{employeeID}/role",
-                "method": "patch"
-            },
-            "metadata": {
-                "in": "./lib/schemas/OrganizationContactController_changeRoleOfEmployee.in.json",
-                "out": "./lib/schemas/OrganizationContactController_changeRoleOfEmployee.out.json"
-            }
-        },
-        "OrganizationContactController_relatePersonToOrganization": {
-            "main": "./lib/actions/action.js",
-            "title": "OrganizationContactController_relatePersonToOrganization",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
-            "callParams": {
-                "pathName": "/api/contacts/organizations/{organizationID}/contacts",
-                "method": "post",
-                "requestContentType": "application/json"
-            },
-            "metadata": {
-                "in": "./lib/schemas/OrganizationContactController_relatePersonToOrganization.in.json",
-                "out": "./lib/schemas/OrganizationContactController_relatePersonToOrganization.out.json"
-            }
-        },
-        "DraftsController_add": {
-            "main": "./lib/actions/action.js",
-            "title": "Add Draft",
-            "description": "Create a single draft",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
-            "callParams": {
-                "pathName": "/api/contacts/drafts/{source}",
-                "method": "post",
-                "requestContentType": "application/json"
-            },
-            "metadata": {
-                "in": "./lib/schemas/DraftsController_add.in.json",
-                "out": "./lib/schemas/DraftsController_add.out.json"
-            }
-        },
-        "DraftsController_read": {
-            "main": "./lib/actions/action.js",
-            "title": "Read a contact draft",
-            "description": "Get a single contact draft",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
-            "callParams": {
-                "pathName": "/api/contacts/drafts/{id}",
-                "method": "get"
-            },
-            "metadata": {
-                "in": "./lib/schemas/DraftsController_read.in.json",
-                "out": "./lib/schemas/DraftsController_read.out.json"
-            }
-        },
-        "OrganizationsController_read": {
-            "main": "./lib/actions/action.js",
-            "title": "Read Organization",
-            "description": "Get an organization by id",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
-            "callParams": {
-                "pathName": "/api/contacts/organizations/{id}",
-                "method": "get"
-            },
-            "metadata": {
-                "in": "./lib/schemas/OrganizationsController_read.in.json",
-                "out": "./lib/schemas/OrganizationsController_read.out.json"
-            }
-        },
-        "DraftsController_delete": {
-            "main": "./lib/actions/action.js",
-            "title": "Delete a draft",
-            "description": "Delete a single draft",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
-            "callParams": {
-                "pathName": "/api/contacts/drafts/{id}",
-                "method": "delete"
-            },
-            "metadata": {
-                "in": "./lib/schemas/DraftsController_delete.in.json",
-                "out": "./lib/schemas/DraftsController_delete.out.json"
-            }
-        },
         "InboundSourcesController_add": {
             "main": "./lib/actions/action.js",
             "title": "Add InboundSource ",
             "description": "Create an organization",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
             "callParams": {
                 "pathName": "/api/contacts/inbound-sources",
                 "method": "post",
@@ -600,74 +395,36 @@
                 "out": "./lib/schemas/InboundSourcesController_add.out.json"
             }
         },
-        "InboundSourcesController_edit": {
+        "DraftsController_read": {
             "main": "./lib/actions/action.js",
-            "title": "Edit Inbound Source",
-            "description": "Edit an Inbound Source, id is not required in the body",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
+            "title": "Read a contact draft",
+            "description": "Get a single contact draft",
             "callParams": {
-                "pathName": "/api/contacts/inbound-sources/{id}",
-                "method": "patch",
-                "requestContentType": "application/json"
+                "pathName": "/api/contacts/drafts/{id}",
+                "method": "get"
             },
             "metadata": {
-                "in": "./lib/schemas/InboundSourcesController_edit.in.json",
-                "out": "./lib/schemas/InboundSourcesController_edit.out.json"
+                "in": "./lib/schemas/DraftsController_read.in.json",
+                "out": "./lib/schemas/DraftsController_read.out.json"
             }
         },
-        "OrganizationBranchController_addBranchToOrganization": {
+        "DraftsController_delete": {
             "main": "./lib/actions/action.js",
-            "title": "OrganizationBranchController_addBranchToOrganization",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
+            "title": "Delete a draft",
+            "description": "Delete a single draft",
             "callParams": {
-                "pathName": "/api/contacts/organizations/{organizationID}/branches",
-                "method": "post",
-                "requestContentType": "application/json"
-            },
-            "metadata": {
-                "in": "./lib/schemas/OrganizationBranchController_addBranchToOrganization.in.json",
-                "out": "./lib/schemas/OrganizationBranchController_addBranchToOrganization.out.json"
-            }
-        },
-        "InboundSourcesController_delete": {
-            "main": "./lib/actions/action.js",
-            "title": "Delete an inbound source",
-            "description": "Delete an inbound source",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
-            "callParams": {
-                "pathName": "/api/contacts/inbound-sources/{id}",
+                "pathName": "/api/contacts/drafts/{id}",
                 "method": "delete"
             },
             "metadata": {
-                "in": "./lib/schemas/InboundSourcesController_delete.in.json",
-                "out": "./lib/schemas/InboundSourcesController_delete.out.json"
+                "in": "./lib/schemas/DraftsController_delete.in.json",
+                "out": "./lib/schemas/DraftsController_delete.out.json"
             }
         },
         "InboundSourcesController_read": {
             "main": "./lib/actions/action.js",
             "title": "Read an inbound source",
             "description": "Get an inbound source by id",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
             "callParams": {
                 "pathName": "/api/contacts/inbound-sources/{id}",
                 "method": "get"
@@ -677,54 +434,63 @@
                 "out": "./lib/schemas/InboundSourcesController_read.out.json"
             }
         },
-        "OrganizationContactController_unrelatePersonToOrganization": {
+        "OrganizationsController_delete": {
             "main": "./lib/actions/action.js",
-            "title": "OrganizationContactController_unrelatePersonToOrganization",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
+            "title": "Delete Organization",
+            "description": "Delete an organization",
             "callParams": {
-                "pathName": "/api/contacts/organizations/{organizationID}/contacts/{employeeID}",
+                "pathName": "/api/contacts/organizations/{id}",
                 "method": "delete"
             },
             "metadata": {
-                "in": "./lib/schemas/OrganizationContactController_unrelatePersonToOrganization.in.json",
-                "out": "./lib/schemas/OrganizationContactController_unrelatePersonToOrganization.out.json"
+                "in": "./lib/schemas/OrganizationsController_delete.in.json",
+                "out": "./lib/schemas/OrganizationsController_delete.out.json"
             }
         },
-        "CustomFieldsController_edit": {
+        "OrganizationsController_add": {
             "main": "./lib/actions/action.js",
-            "title": "Edit Custom Field",
-            "description": "Edit an Custom Field, id is not required in the body",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
+            "title": "Add Organization",
+            "description": "Create an organization",
             "callParams": {
-                "pathName": "/api/contacts/custom-fields/{entity}/{id}",
-                "method": "patch",
+                "pathName": "/api/contacts/organizations",
+                "method": "post",
                 "requestContentType": "application/json"
             },
             "metadata": {
-                "in": "./lib/schemas/CustomFieldsController_edit.in.json",
-                "out": "./lib/schemas/CustomFieldsController_edit.out.json"
+                "in": "./lib/schemas/OrganizationsController_add.in.json",
+                "out": "./lib/schemas/OrganizationsController_add.out.json"
+            }
+        },
+        "CustomFieldsController_browseByEntity": {
+            "main": "./lib/actions/action.js",
+            "title": "Browse Custom fields by entity",
+            "description": "Get custom fields by entity",
+            "callParams": {
+                "pathName": "/api/contacts/custom-fields/{entity}",
+                "method": "get"
+            },
+            "metadata": {
+                "in": "./lib/schemas/CustomFieldsController_browseByEntity.in.json",
+                "out": "./lib/schemas/CustomFieldsController_browseByEntity.out.json"
+            }
+        },
+        "CustomFieldsController_delete": {
+            "main": "./lib/actions/action.js",
+            "title": "Delete a custom field",
+            "description": "Delete a custom field",
+            "callParams": {
+                "pathName": "/api/contacts/custom-fields/{entity}/{key}/{id}",
+                "method": "delete"
+            },
+            "metadata": {
+                "in": "./lib/schemas/CustomFieldsController_delete.in.json",
+                "out": "./lib/schemas/CustomFieldsController_delete.out.json"
             }
         },
         "CustomFieldsController_setValue": {
             "main": "./lib/actions/action.js",
             "title": "Set value of Custom Field",
             "description": "Set value of Custom Field",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
             "callParams": {
                 "pathName": "/api/contacts/custom-fields/values/{entity}/{id}",
                 "method": "patch",
@@ -735,93 +501,10 @@
                 "out": "./lib/schemas/CustomFieldsController_setValue.out.json"
             }
         },
-        "DraftsController_verify": {
-            "main": "./lib/actions/action.js",
-            "title": "Verify a draft",
-            "description": "Verify a draft",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
-            "callParams": {
-                "pathName": "/api/contacts/drafts/{id}/verify",
-                "method": "patch",
-                "requestContentType": "application/json"
-            },
-            "metadata": {
-                "in": "./lib/schemas/DraftsController_verify.in.json",
-                "out": "./lib/schemas/DraftsController_verify.out.json"
-            }
-        },
-        "ContactViewsController_read": {
-            "main": "./lib/actions/action.js",
-            "title": "Read an contact view",
-            "description": "Get an contact view by id",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
-            "callParams": {
-                "pathName": "/api/contacts/contact-views/{id}",
-                "method": "get"
-            },
-            "metadata": {
-                "in": "./lib/schemas/ContactViewsController_read.in.json",
-                "out": "./lib/schemas/ContactViewsController_read.out.json"
-            }
-        },
-        "CustomFieldsController_delete": {
-            "main": "./lib/actions/action.js",
-            "title": "Delete a custom field",
-            "description": "Delete a custom field",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
-            "callParams": {
-                "pathName": "/api/contacts/custom-fields/{entity}/{key}/{id}",
-                "method": "delete"
-            },
-            "metadata": {
-                "in": "./lib/schemas/CustomFieldsController_delete.in.json",
-                "out": "./lib/schemas/CustomFieldsController_delete.out.json"
-            }
-        },
-        "ContactViewsController_delete": {
-            "main": "./lib/actions/action.js",
-            "title": "Delete a contact view",
-            "description": "Delete a contact view",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
-            "callParams": {
-                "pathName": "/api/contacts/contact-views/{id}",
-                "method": "delete"
-            },
-            "metadata": {
-                "in": "./lib/schemas/ContactViewsController_delete.in.json",
-                "out": "./lib/schemas/ContactViewsController_delete.out.json"
-            }
-        },
         "ContactViewsController_add": {
             "main": "./lib/actions/action.js",
             "title": "Add a Contact View",
             "description": "Create a contact view",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
             "callParams": {
                 "pathName": "/api/contacts/contact-views",
                 "method": "post",
@@ -832,113 +515,64 @@
                 "out": "./lib/schemas/ContactViewsController_add.out.json"
             }
         },
-        "CustomFieldsController_add": {
+        "ContactViewsController_read": {
             "main": "./lib/actions/action.js",
-            "title": "Add a Custom Field",
-            "description": "Create a custom field",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
-            "callParams": {
-                "pathName": "/api/contacts/custom-fields",
-                "method": "post",
-                "requestContentType": "application/json"
-            },
-            "metadata": {
-                "in": "./lib/schemas/CustomFieldsController_add.in.json",
-                "out": "./lib/schemas/CustomFieldsController_add.out.json"
-            }
-        },
-        "ContactViewsController_edit": {
-            "main": "./lib/actions/action.js",
-            "title": "Edit contact view",
-            "description": "Edit an contact view, id is not required in the body",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
+            "title": "Read an contact view",
+            "description": "Get an contact view by id",
             "callParams": {
                 "pathName": "/api/contacts/contact-views/{id}",
+                "method": "get"
+            },
+            "metadata": {
+                "in": "./lib/schemas/ContactViewsController_read.in.json",
+                "out": "./lib/schemas/ContactViewsController_read.out.json"
+            }
+        },
+        "CustomFieldsController_edit": {
+            "main": "./lib/actions/action.js",
+            "title": "Edit Custom Field",
+            "description": "Edit an Custom Field, id is not required in the body",
+            "callParams": {
+                "pathName": "/api/contacts/custom-fields/{entity}/{id}",
                 "method": "patch",
                 "requestContentType": "application/json"
             },
             "metadata": {
-                "in": "./lib/schemas/ContactViewsController_edit.in.json",
-                "out": "./lib/schemas/ContactViewsController_edit.out.json"
+                "in": "./lib/schemas/CustomFieldsController_edit.in.json",
+                "out": "./lib/schemas/CustomFieldsController_edit.out.json"
             }
         },
-        "ImportController_getPersonsTemplate": {
+        "DraftsController_add": {
             "main": "./lib/actions/action.js",
-            "title": "Get xlsx file with all organizations + ready for import organizations",
-            "description": "Get all organizations",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
+            "title": "Add Draft",
+            "description": "Create a single draft",
             "callParams": {
-                "pathName": "/api/contacts/import/personsTemplate/{importID}/{lang}",
-                "method": "get"
+                "pathName": "/api/contacts/drafts/{source}",
+                "method": "post",
+                "requestContentType": "application/json"
             },
             "metadata": {
-                "in": "./lib/schemas/ImportController_getPersonsTemplate.in.json",
-                "out": "./lib/schemas/ImportController_getPersonsTemplate.out.json"
+                "in": "./lib/schemas/DraftsController_add.in.json",
+                "out": "./lib/schemas/DraftsController_add.out.json"
             }
         },
-        "CustomFieldsController_browseByEntity": {
+        "InboundSourcesController_delete": {
             "main": "./lib/actions/action.js",
-            "title": "Browse Custom fields by entity",
-            "description": "Get custom fields by entity",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
+            "title": "Delete an inbound source",
+            "description": "Delete an inbound source",
             "callParams": {
-                "pathName": "/api/contacts/custom-fields/{entity}",
-                "method": "get"
+                "pathName": "/api/contacts/inbound-sources/{id}",
+                "method": "delete"
             },
             "metadata": {
-                "in": "./lib/schemas/CustomFieldsController_browseByEntity.in.json",
-                "out": "./lib/schemas/CustomFieldsController_browseByEntity.out.json"
-            }
-        },
-        "ImportController_postPersonsFile": {
-            "main": "./lib/actions/action.js",
-            "title": "Upload persons file for current import",
-            "description": "Upload persons file for current import",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
-            "callParams": {
-                "pathName": "/api/contacts/import/personsFile/{importID}",
-                "method": "post"
-            },
-            "metadata": {
-                "in": "./lib/schemas/ImportController_postPersonsFile.in.json",
-                "out": "./lib/schemas/ImportController_postPersonsFile.out.json"
+                "in": "./lib/schemas/InboundSourcesController_delete.in.json",
+                "out": "./lib/schemas/InboundSourcesController_delete.out.json"
             }
         },
         "ImportController_postOrganizationsFile": {
             "main": "./lib/actions/action.js",
             "title": "Upload organizations file for current import",
             "description": "Upload organizations file for current import",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
             "callParams": {
                 "pathName": "/api/contacts/import/organizationsFile/{importID}",
                 "method": "post"
@@ -948,36 +582,23 @@
                 "out": "./lib/schemas/ImportController_postOrganizationsFile.out.json"
             }
         },
-        "OrganizationsController_edit": {
+        "ImportController_getOrganizationsTemplate": {
             "main": "./lib/actions/action.js",
-            "title": "Edit Organization",
-            "description": "Edit an organization",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
+            "title": "Get xlsx file with all persons with that import ID",
+            "description": "Get all persons with that import ID",
             "callParams": {
-                "pathName": "/api/contacts/organizations/{id}",
-                "method": "patch",
-                "requestContentType": "application/json"
+                "pathName": "/api/contacts/import/organizationsTemplate/{importID}/{lang}",
+                "method": "get"
             },
             "metadata": {
-                "in": "./lib/schemas/OrganizationsController_edit.in.json",
-                "out": "./lib/schemas/OrganizationsController_edit.out.json"
+                "in": "./lib/schemas/ImportController_getOrganizationsTemplate.in.json",
+                "out": "./lib/schemas/ImportController_getOrganizationsTemplate.out.json"
             }
         },
         "PersonsController_edit": {
             "main": "./lib/actions/action.js",
             "title": "Edit Persons",
             "description": "Edit single person",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
             "callParams": {
                 "pathName": "/api/contacts/persons/{id}",
                 "method": "patch",
@@ -988,35 +609,62 @@
                 "out": "./lib/schemas/PersonsController_edit.out.json"
             }
         },
-        "ImportController_getOrganizationsTemplate": {
+        "ImportController_getPersonsTemplate": {
             "main": "./lib/actions/action.js",
-            "title": "Get xlsx file with all persons with that import ID",
-            "description": "Get all persons with that import ID",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
+            "title": "Get xlsx file with all organizations + ready for import organizations",
+            "description": "Get all organizations",
             "callParams": {
-                "pathName": "/api/contacts/import/organizationsTemplate/{importID}/{lang}",
+                "pathName": "/api/contacts/import/personsTemplate/{importID}/{lang}",
                 "method": "get"
             },
             "metadata": {
-                "in": "./lib/schemas/ImportController_getOrganizationsTemplate.in.json",
-                "out": "./lib/schemas/ImportController_getOrganizationsTemplate.out.json"
+                "in": "./lib/schemas/ImportController_getPersonsTemplate.in.json",
+                "out": "./lib/schemas/ImportController_getPersonsTemplate.out.json"
+            }
+        },
+        "ImportController_postPersonsFile": {
+            "main": "./lib/actions/action.js",
+            "title": "Upload persons file for current import",
+            "description": "Upload persons file for current import",
+            "callParams": {
+                "pathName": "/api/contacts/import/personsFile/{importID}",
+                "method": "post"
+            },
+            "metadata": {
+                "in": "./lib/schemas/ImportController_postPersonsFile.in.json",
+                "out": "./lib/schemas/ImportController_postPersonsFile.out.json"
+            }
+        },
+        "OrganizationBranchController_editBranchOfOrganization": {
+            "main": "./lib/actions/action.js",
+            "title": "OrganizationBranchController_editBranchOfOrganization",
+            "callParams": {
+                "pathName": "/api/contacts/organizations/{organizationID}/branches/{branchID}",
+                "method": "patch"
+            },
+            "metadata": {
+                "in": "./lib/schemas/OrganizationBranchController_editBranchOfOrganization.in.json",
+                "out": "./lib/schemas/OrganizationBranchController_editBranchOfOrganization.out.json"
+            }
+        },
+        "CustomFieldsController_add": {
+            "main": "./lib/actions/action.js",
+            "title": "Add a Custom Field",
+            "description": "Create a custom field",
+            "callParams": {
+                "pathName": "/api/contacts/custom-fields",
+                "method": "post",
+                "requestContentType": "application/json"
+            },
+            "metadata": {
+                "in": "./lib/schemas/CustomFieldsController_add.in.json",
+                "out": "./lib/schemas/CustomFieldsController_add.out.json"
             }
         },
         "ImportController_cancelImport": {
             "main": "./lib/actions/action.js",
             "title": "Cancel import",
             "description": "Cancel import",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
             "callParams": {
                 "pathName": "/api/contacts/import/cancel/{importID}",
                 "method": "get"
@@ -1026,23 +674,57 @@
                 "out": "./lib/schemas/ImportController_cancelImport.out.json"
             }
         },
-        "OrganizationsController_bulkDelete": {
+        "ContactViewsController_edit": {
             "main": "./lib/actions/action.js",
-            "title": "Bulk delete organizations",
-            "description": "Delete a list of organizations",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
+            "title": "Edit contact view",
+            "description": "Edit an contact view, id is not required in the body",
             "callParams": {
-                "pathName": "/api/contacts/organizations",
+                "pathName": "/api/contacts/contact-views/{id}",
+                "method": "patch",
+                "requestContentType": "application/json"
+            },
+            "metadata": {
+                "in": "./lib/schemas/ContactViewsController_edit.in.json",
+                "out": "./lib/schemas/ContactViewsController_edit.out.json"
+            }
+        },
+        "ContactViewsController_delete": {
+            "main": "./lib/actions/action.js",
+            "title": "Delete a contact view",
+            "description": "Delete a contact view",
+            "callParams": {
+                "pathName": "/api/contacts/contact-views/{id}",
                 "method": "delete"
             },
             "metadata": {
-                "in": "./lib/schemas/OrganizationsController_bulkDelete.in.json",
-                "out": "./lib/schemas/OrganizationsController_bulkDelete.out.json"
+                "in": "./lib/schemas/ContactViewsController_delete.in.json",
+                "out": "./lib/schemas/ContactViewsController_delete.out.json"
+            }
+        },
+        "OrganizationBranchController_deleteBranchOfOrganization": {
+            "main": "./lib/actions/action.js",
+            "title": "OrganizationBranchController_deleteBranchOfOrganization",
+            "callParams": {
+                "pathName": "/api/contacts/organizations/{organizationID}/branches/{branchID}",
+                "method": "delete"
+            },
+            "metadata": {
+                "in": "./lib/schemas/OrganizationBranchController_deleteBranchOfOrganization.in.json",
+                "out": "./lib/schemas/OrganizationBranchController_deleteBranchOfOrganization.out.json"
+            }
+        },
+        "InboundSourcesController_edit": {
+            "main": "./lib/actions/action.js",
+            "title": "Edit Inbound Source",
+            "description": "Edit an Inbound Source, id is not required in the body",
+            "callParams": {
+                "pathName": "/api/contacts/inbound-sources/{id}",
+                "method": "patch",
+                "requestContentType": "application/json"
+            },
+            "metadata": {
+                "in": "./lib/schemas/InboundSourcesController_edit.in.json",
+                "out": "./lib/schemas/InboundSourcesController_edit.out.json"
             }
         }
     }
