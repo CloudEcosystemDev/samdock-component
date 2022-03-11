@@ -11,7 +11,7 @@
                 "_id": {
                     "type": "string",
                     "description": "the id of the contact draft",
-                    "default": "pIdeHJDpzFe6AAuCA72OH"
+                    "default": "mZLg2q-Fk92i_R8D8snAP"
                 },
                 "email": {
                     "type": "string",

@@ -192,5 +192,9 @@
                 "type": "string"
             }
         }
-    }
+    },
+    "required": [
+        "_tenantID",
+        "_id"
+    ]
 }

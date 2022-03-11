@@ -1,4 +1,74 @@
 {
-    "type": "object",
-    "properties": {}
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "_id": {
+                "type": "string",
+                "description": "The id of the contact view",
+                "default": "kurgiKqY8gmHkzL9B9Ce4"
+            },
+            "name": {
+                "type": "string",
+                "description": "The name of the contact view"
+            },
+            "entity": {
+                "type": "string",
+                "description": "The entity of the contact view",
+                "enum": [
+                    "person",
+                    "organization",
+                    "all"
+                ]
+            },
+            "isShared": {
+                "type": "boolean",
+                "description": "Is this contact view shared"
+            },
+            "isLocked": {
+                "type": "boolean",
+                "description": "Is this contact view locked"
+            },
+            "filters": {
+                "type": "object",
+                "description": "Contact view filters"
+            },
+            "columns": {
+                "type": "object",
+                "description": "Contact view columns"
+            },
+            "_tenantID": {
+                "type": "string",
+                "description": "The id of the tenant"
+            },
+            "createdAt": {
+                "type": "number",
+                "description": "Timestamp when contact view was created"
+            },
+            "createdBy": {
+                "type": "string",
+                "description": "The id of user who created contact view"
+            },
+            "updatedAt": {
+                "type": "number",
+                "description": "Timestamp when contact view was updated last time"
+            },
+            "updatedBy": {
+                "type": "string",
+                "description": "The id of user who updated contact view last time"
+            }
+        },
+        "required": [
+            "_id",
+            "name",
+            "entity",
+            "filters",
+            "columns",
+            "_tenantID",
+            "createdAt",
+            "createdBy",
+            "updatedAt",
+            "updatedBy"
+        ]
+    }
 }

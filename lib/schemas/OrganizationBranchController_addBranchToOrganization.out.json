@@ -1,4 +1,147 @@
 {
     "type": "object",
-    "properties": {}
+    "properties": {
+        "_tenantID": {
+            "type": "string",
+            "description": "the related tenant"
+        },
+        "_id": {
+            "type": "string",
+            "description": "The ID of the organization"
+        },
+        "email": {
+            "type": "string",
+            "description": "The email of the organization"
+        },
+        "name": {
+            "type": "string",
+            "description": "The name of the organization"
+        },
+        "phoneNumber": {
+            "type": "string",
+            "description": "The phone number of the organization"
+        },
+        "faxNumber": {
+            "type": "string",
+            "description": "The fax number of the person"
+        },
+        "linkedin": {
+            "type": "string",
+            "description": "The social media links of the person"
+        },
+        "xing": {
+            "type": "string",
+            "description": "The social media links of the person"
+        },
+        "facebook": {
+            "type": "string",
+            "description": "The social media links of the person"
+        },
+        "twitter": {
+            "type": "string",
+            "description": "The social media links of the person"
+        },
+        "instagram": {
+            "type": "string",
+            "description": "The social media links of the person"
+        },
+        "vatRegNo": {
+            "type": "string",
+            "description": "The Umsatzsteuer ID / VAT Reg No of the organization"
+        },
+        "website": {
+            "type": "string",
+            "description": "The website of the organization"
+        },
+        "logo": {
+            "type": "string",
+            "description": "The logo of the organization"
+        },
+        "createdAt": {
+            "format": "date-time",
+            "type": "string",
+            "description": "The created at timestamp of the organization"
+        },
+        "updatedAt": {
+            "format": "date-time",
+            "type": "string",
+            "description": "The update timestamp of the organization"
+        },
+        "importID": {
+            "type": "string",
+            "description": "Import id"
+        },
+        "address": {
+            "description": "The address of the organization",
+            "allOf": [
+                {
+                    "type": "object",
+                    "properties": {
+                        "street": {
+                            "type": "string",
+                            "description": "The street name of the address (string:alpha)"
+                        },
+                        "number": {
+                            "type": "string",
+                            "description": "The house number (two digits and char)"
+                        },
+                        "postcode": {
+                            "type": "string",
+                            "description": "The post code consisting of 5 digits"
+                        },
+                        "city": {
+                            "type": "string",
+                            "description": "The city name (string:alpha)"
+                        },
+                        "country": {
+                            "type": "string",
+                            "description": "The name of the country (string:alpha)"
+                        }
+                    }
+                }
+            ]
+        },
+        "branches": {
+            "description": "The branches of the organization",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "employees": {
+            "description": "The employees of the organization",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "deals": {
+            "description": "The deals related to the organization",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "contactPerson": {
+            "type": "string",
+            "description": "The main contact person of the organization"
+        },
+        "customFields": {
+            "type": "object",
+            "description": "Custom fields for each organization"
+        },
+        "isCustomer": {
+            "type": "boolean",
+            "description": "Customer status of the organization"
+        },
+        "integrations": {
+            "type": "object",
+            "description": "Integrations info of the organzaion"
+        }
+    },
+    "required": [
+        "_tenantID",
+        "_id",
+        "name"
+    ]
 }
