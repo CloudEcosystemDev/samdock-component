@@ -11,7 +11,7 @@
                 "_id": {
                     "type": "string",
                     "description": "The id of the contact view",
-                    "default": "kurgiKqY8gmHkzL9B9Ce4"
+                    "default": "k6PML8uxxXDCqqTjzNxvR"
                 },
                 "name": {
                     "type": "string",
